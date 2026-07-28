@@ -23,6 +23,11 @@
 </head>
 
 <body>
+    <button id="theme-toggle" type="button" aria-label="Alternar tema" aria-pressed="false">
+        <ion-icon name="sunny-outline"></ion-icon>
+        <span>Modo claro</span>
+    </button>
+
     <main id="container">
         <aside id="bio-container">
             <h2>Davi Ortolan</h2>
@@ -39,8 +44,9 @@
             </ul>
             <div id="email-container">
                 <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
-                <a href="mailto:davimortolan@gmail.com">davimortolan@gmail.com</a>
+                <a id="email-copy" href="mailto:davimortolan@gmail.com" data-email="davimortolan@gmail.com">davimortolan@gmail.com</a>
             </div>
+            <span id="copy-feedback" aria-live="polite"></span>
         </aside>
         <section id="about-container">
             <h1 id="name">Davi Ortolan</h1>
@@ -122,6 +128,7 @@
     <!-- Ion Icons -->
     <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
