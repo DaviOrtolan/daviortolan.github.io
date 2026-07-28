@@ -5,16 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Davi Ortolan</title>
+    <meta name="description" content="Davi Ortolan — Desenvolvedor Back-End em formação, Java e SQL.">
+    <meta property="og:title" content="Davi Ortolan — Desenvolvedor Back-End">
+    <meta property="og:description" content="Portfólio e projetos de Davi Ortolan.">
+    <meta property="og:image" content="https://daviortolan.github.io/img/profile.jpeg">
+    <meta property="og:url" content="https://daviortolan.github.io/">
+    <link rel="icon" href="img/favicon.ico">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+        rel="stylesheet">
     <!-- Dev icon fonts-->
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/devicon.min.css" />
     <!-- Css do projeto-->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <main id="container">
         <aside id="bio-container">
@@ -23,45 +30,55 @@
             <p>Olá, meu nome é Davi Ortolan e sou <span class="highlight">Desenvolvedor Back-End.</span></p>
             <p id="welcome-text">Seja bem vindo!</p>
             <ul id="social-container">
-                <li><a href="https://www.linkedin.com/in/davi-m-ortolan/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                <li><a href="https://www.instagram.com/davi_ortolan/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                <li><a href="https://wa.me/5517991137709" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                <li><a href="https://www.linkedin.com/in/davi-m-ortolan/" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="https://www.instagram.com/davi_ortolan/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="https://wa.me/5517991137709" target="_blank" rel="noopener noreferrer"
+                        aria-label="WhatsApp"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
             </ul>
             <div id="email-container">
-                <ion-icon name="mail-outline"></ion-icon><a href="mailto:davimortolan@gmail.com">davimortolan@gmail.com</a>
+                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                <a href="mailto:davimortolan@gmail.com">davimortolan@gmail.com</a>
             </div>
         </aside>
         <section id="about-container">
             <h1 id="name">Davi Ortolan</h1>
             <p id="title"><span class="highlight">Desenvolvedor Back End</span></p>
-            <p class="description">Sou um jovem Desenvolvedor em formação na Fatec Rio Preto no curso de Informática para Negócios, tenho experiência em projetos <span class="highlight">Front-End com HTML e CSS</span> em versionamento de código com <span class="highlight">Git e GitHub</span>, e em Banco de Dados <span class="highlight">SQL.</span></p> 
-            <p>Estou estudando para me tornar Desenvolvedor Full Stack adquirindo conhecimento em <span class="highlight">Java e SpringBoot.</span>
+            <p class="description">Sou um jovem Desenvolvedor em formação na Fatec Rio Preto no curso de Informática
+                para Negócios, tenho experiência em projetos <span class="highlight">Front-End com HTML e CSS</span> em
+                versionamento de código com <span class="highlight">Git e GitHub</span>, e em Banco de Dados <span
+                    class="highlight">MySQL, SQL Server e SQLite.</span></p>
+            <p>Estou estudando para me tornar Desenvolvedor Back End adquirindo conhecimento em <span
+                    class="highlight">Java e SpringBoot.</span>
             </p>
-            <a href="https://github.com/DaviOrtolan" id="btn-projects" target="_blank"><ion-icon name="share-social-outline"></ion-icon><span>Ver Projetos</span></a>
+            <a href="https://github.com/DaviOrtolan" id="btn-projects" target="_blank"><ion-icon
+                    name="share-social-outline"></ion-icon><span>Ver Projetos</span></a>
             <h2 id="skills-section-title">Minhas Skills</h2>
             <p id="description">Conheça as tecnologias que domino:</p>
             <div id="skills-container">
-                <div id="skill-box">
+                <div class="skill-box">
                     <p class="skills-title">Front-End</p>
                     <i class="devicon-html5-plain colored"></i>
                     <i class="devicon-css3-plain colored"></i>
                 </div>
-                <div id="skill-box">
+                <div class="skill-box">
                     <p class="skills-title">Back-End</p>
                     <i class="devicon-java-plain"></i>
+                    <i class="devicon-spring-original-wordmark"></i>
                 </div>
-                <div id="skill-box">
-                    <p class="skills-title">DataBase</p>  
+                <div class="skill-box">
+                    <p class="skills-title">DataBase</p>
                     <i class="devicon-mysql-plain-wordmark"></i>
                     <i class="devicon-microsoftsqlserver-plain-wordmark"></i>
                     <i class="devicon-sqlite-plain-wordmark colored"></i>
                 </div>
-                <div id="skill-box">
+                <div class="skill-box">
                     <p class="skills-title">Versionamento</p>
                     <i class="devicon-git-plain colored"></i>
                     <i class="devicon-github-plain"></i>
                 </div>
-                <div id="skill-box">
+                <div class="skill-box">
                     <p class="skills-title">Tools</p>
                     <i class="devicon-vscode-plain colored"></i>
                     <i class="devicon-intellij-plain"></i>
@@ -69,9 +86,10 @@
             </div>
         </section>
     </main>
-          
+
     <!-- Ion Icons -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
