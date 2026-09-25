@@ -121,6 +121,39 @@ body.light-theme #theme-toggle {
     padding-bottom: 25px;
 }
 
+#cv-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 25px;
+    padding: 12px 18px;
+    border: 2px solid var(--main-color);
+    border-radius: 6px;
+    background-color: var(--main-color);
+    color: var(--main-text-color);
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                transform 0.2s ease;
+}
+
+#cv-button ion-icon {
+    font-size: 20px;
+}
+
+#cv-button:hover {
+    background-color: transparent;
+    color: var(--main-color);
+    transform: translateY(-2px);
+}
+
+#cv-button:focus-visible {
+    outline: 3px solid var(--main-color);
+    outline-offset: 3px;
+}
+
 #social-container li {
     flex: 1 1 0;
     max-width: 60px;
@@ -129,23 +162,6 @@ body.light-theme #theme-toggle {
 #social-container li a {
     color: var(--main-color);
     font-size: 30px;
-}
-
-#email-container {
-    display: flex;
-    justify-content: center;
-}
-
-#email-container ion-icon,
-#email-container a {
-    flex: 1 1 0;
-}
-
-#email-container a {
-    color: var(--main-text-color);
-    text-decoration: none;
-    max-width: 225px;
-    cursor: pointer;
 }
 
 #copy-feedback {
