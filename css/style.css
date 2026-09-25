@@ -137,7 +137,7 @@ body.light-theme #theme-toggle {
 }
 
 #email-container ion-icon,
-#email-contanier a {
+#email-container a {
     flex: 1 1 0;
 }
 
@@ -275,7 +275,7 @@ body.light-theme #theme-toggle {
         display: none;
     }
 
-    #bio-contanier p {
+    #bio-container p {
         max-width: 60%;
         margin: 10px auto;
     }
@@ -295,7 +295,7 @@ body.light-theme #theme-toggle {
         margin: 20px auto;
     }
 
-    #skill-box {
+    .skill-box {
         flex: 1 1 100%;
         max-width: 100%;
         margin-bottom: 40px;
